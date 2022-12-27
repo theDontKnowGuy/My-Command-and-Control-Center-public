@@ -1,6 +1,6 @@
 {
   "ConfigurationVersion": 100,
-  "targetFWVersion": 2022122403,
+  "targetFWVersion": 2022122603,
   "GeneralConfiguration": {
     "DEBUGLEVEL": 2,
     "daylightOffset_sec": 0,
