@@ -2,17 +2,17 @@
   "ConfigurationVersion": 100,
   "targetFWVersion": 2022122603,
   "GeneralConfiguration": {
-    "DEBUGLEVEL": 2,
+    "debuglevel": 2,
     "daylightOffset_sec": 0,
     "gmtOffset_sec": 10800,
-    "dataUpdateHost": "raw.githubusercontent.com",
-    "dataUpdateURI": "/theDontKnowGuy/My-Command-and-Control-Center-public/main/Configuration/configuration.json",
-    "dataUpdatePort": 443,
-    "loggerHost": "maker.ifttt.com",
-    "logTarget": "/trigger/Command-and-Contol-Log/with/key/cop304vj9Hmdlf547a-zbB",
-    "write_api_key": "NGOL1T65IJHKTURU",
-    "loggerHostPort": 443,
-    "loggingType": 3
+    "config_host": "raw.githubusercontent.com",
+    "config_URI": "/theDontKnowGuy/My-Command-and-Control-Center-public/main/Configuration/configuration.json",
+    "config_port": 443,
+    "log_network_host": "maker.ifttt.com",
+    "log_network_URI": "/trigger/Command-and-Contol-Log/with/key/cop304vj9Hmdlf547a-zbB",
+    "log_api_key": "NGOL1T65IJHKTURU",
+    "log_network_port": 443,
+    "log_logging_method": 3
   },
   "ComponentTypes": [
     {
