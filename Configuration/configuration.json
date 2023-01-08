@@ -12,64 +12,123 @@
     "log_network_URI": "/trigger/Command-and-Contol-Log/with/key/cop304vj9Hmdlf547a-zbB",
     "log_api_key": "NGOL1T65IJHKTURU",
     "log_network_port": 443,
-    "log_logging_method": 3
+    "log_logging_method": 3,
+    "mqtt_server_host": "192.168.1.200",
+    "mqtt_server_port": 1883,
+    "mqtt_subscribe_topic": "AE_C3_events",
+    "mqtt_publish_topic": "AE_C3_events"
   },
   "ComponentTypes": [
     {
       "name": "OnOffMomentarilyLighted",
-      "actuator": ["on", "off"],
-      "sensor": ["on", "off"]
+      "actuator": [
+        "on",
+        "off"
+      ],
+      "sensor": [
+        "on",
+        "off"
+      ]
     },
     {
       "name": "OnOffMomentarily",
-      "sensor": ["on", "off"]
+      "sensor": [
+        "on",
+        "off"
+      ]
     },
     {
       "name": "OnOffLatch",
-      "sensor": ["on", "off"]
+      "sensor": [
+        "on",
+        "off"
+      ]
     },
     {
       "name": "ThreeStateSwitchLighted",
-      "sensor": ["pos1", "pos2", "off"],
-      "actuator": ["on", "off"]
+      "sensor": [
+        "pos1",
+        "pos2",
+        "off"
+      ],
+      "actuator": [
+        "on",
+        "off"
+      ]
     },
     {
       "name": "IndicationLightSingleColor",
-      "actuator": ["on", "off"]
+      "actuator": [
+        "on",
+        "off"
+      ]
     },
     {
       "name": "IndicationLightRGB",
-      "actuator": ["red", "green", "blue", "off"]
+      "actuator": [
+        "red",
+        "green",
+        "blue",
+        "off"
+      ]
     },
     {
       "name": "IndicationLightRGY",
-      "actuator": ["red", "yellow", "green", "off"]
+      "actuator": [
+        "red",
+        "yellow",
+        "green",
+        "off"
+      ]
     },
     {
       "name": "OnOffLatchLighted",
-      "actuator": ["on", "off"],
-      "sensor": ["on", "off"]
+      "actuator": [
+        "on",
+        "off"
+      ],
+      "sensor": [
+        "on",
+        "off"
+      ]
     },
     {
       "name": "SwitchKey",
-      "sense": ["on", "off"]
+      "sense": [
+        "on",
+        "off"
+      ]
     },
     {
       "name": "Speaker",
-      "actuator": ["play", "off"],
-      "params": ["content"]
+      "actuator": [
+        "play",
+        "off"
+      ],
+      "params": [
+        "content"
+      ]
     },
     {
       "name": "vibrationSensor",
-      "sense": ["on", "off"]
+      "sense": [
+        "on",
+        "off"
+      ]
     },
     {
       "name": "Vibrator",
-      "actuator": ["on", "off"]
+      "actuator": [
+        "on",
+        "off"
+      ]
     },
     {
       "name": "potentiomener",
-      "sense": [0, 1023]
+      "sense": [
+        0,
+        1023
+      ]
     }
   ],
   "myDevices": [
@@ -78,22 +137,32 @@
       "id": 1,
       "type": "OnOffLatchLighted",
       "description": "Arms siren buttons",
-      "actuatorsAddress": [17],
-      "sensorsAddress": [18]
+      "actuatorsAddress": [
+        17
+      ],
+      "sensorsAddress": [
+        18
+      ]
     },
     {
       "name": "GardenDoor",
       "id": 2,
       "type": "IndicationLightRGY",
       "description": "red - movement or door open, yellow - event last 5 minutes, green - no movement",
-      "actuatorsAddress": [24, 25, 26]
+      "actuatorsAddress": [
+        24,
+        25,
+        26
+      ]
     },
     {
       "name": "MasterKey",
       "id": 3,
       "type": "SwitchKey",
       "description": "Enable Siren Panel ",
-      "sensorsAddress": [19]
+      "sensorsAddress": [
+        19
+      ]
     }
   ]
 }
